@@ -1,0 +1,33 @@
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 1px 8px;
+  padding: 5rem 9rem;
+  margin: 0;
+}
+
+.icon-mode-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.mode-logo:hover {
+  cursor: pointer;
+}
+
+.question {
+  font-size: 2.5rem;
+}
+.mode {
+  font-size: 2rem;
+  color: rgb(77, 77, 77);
+}
+
+.dark-mode-header {
+  background-color: hsl(209, 23%, 22%);
+}
+
+.dark-mode-txt {
+  color: hsl(0, 0%, 98%);
+}
