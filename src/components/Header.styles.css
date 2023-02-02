@@ -2,8 +2,8 @@
   display: flex;
   justify-content: space-between;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 1px 8px;
-  padding: 5rem 9rem;
-  margin: 0;
+  padding: 5rem 15rem 5rem 9rem;
+  /* margin: 0; */
 }
 
 .icon-mode-container {
@@ -30,4 +30,29 @@
 
 .dark-mode-txt {
   color: hsl(0, 0%, 98%);
+}
+
+@media (max-width: 800px) {
+  .question {
+    font-size: 2rem;
+  }
+  .mode {
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 560px) {
+  .header-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 560px) {
+  .question {
+    font-size: 1.5rem;
+  }
+  .mode {
+    font-size: 1.3rem;
+  }
 }

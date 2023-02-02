@@ -23,7 +23,7 @@ const CountryInfo = ({ className }) => {
 
   return (
     <div>
-      <Link className="link-back" to="/">
+      <Link className="link-back" to="/rest-countries-api">
         Back
       </Link>
       <ul>

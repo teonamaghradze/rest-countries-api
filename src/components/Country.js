@@ -3,13 +3,7 @@ import "./Country.styles.css";
 import { Link } from "react-router-dom";
 const url = "https://restcountries.com/v2/all";
 
-const Country = ({
-  searchTerm,
-  country,
-  setCountry,
-  filteredCountries,
-  className,
-}) => {
+const Country = ({ searchTerm, country, setCountry, className }) => {
   const fetchCountryData = async () => {
     const response = await fetch(url);
     const country = await response.json();

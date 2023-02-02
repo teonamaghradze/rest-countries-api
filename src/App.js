@@ -21,9 +21,6 @@ function App() {
   const handleModeClick = () => {
     setDayMode(!dayMode);
   };
-
-  // const [filteredCountries, setFilteredCountries] = useState([]);
-
   useEffect(() => {
     setLoading(false);
   }, [loading]);
@@ -47,10 +44,11 @@ function App() {
         src={dayMode ? sun : moon}
         mode={dayMode ? "Light Mode" : "Dark Mode"}
       />
+
       <div className="body-container">
         <Routes>
           <Route
-            path="/"
+            path="/rest-countries-api"
             element={
               <div>
                 <SearchBar
@@ -59,14 +57,12 @@ function App() {
                   optionHandler={optionHandler}
                   country={country}
                 />
-
                 <Country
                   className={!dayMode && "dark-mode-country more-btn"}
                   country={country}
                   setCountry={setCountry}
                   searchTerm={searchTerm}
                   filterOptionHandler={filterOptionHandler}
-                  // filteredCountries={filteredCountries}
                 />
               </div>
             }

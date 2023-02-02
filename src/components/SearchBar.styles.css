@@ -1,11 +1,8 @@
 input {
   padding: 3rem 5rem;
   font-size: 1.7rem;
-  max-width: 50rem;
   height: 4.5rem;
   border: none;
-
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   outline: none;
   border-radius: 1rem;
@@ -15,8 +12,9 @@ input:focus {
 }
 .form-container {
   display: flex;
-  justify-content: space-between;
-  margin: 0 6rem 0 0;
+  justify-content: flex-start;
+  gap: 3rem;
+  /* margin: 0 6rem 0 0; */
 }
 
 .search-icon {
@@ -33,7 +31,7 @@ input:focus {
   padding: 2rem 4rem;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 1rem;
-  max-width: 50rem;
+  /* max-width: 100%; */
 }
 
 .dark-mode-searchbar {
@@ -41,10 +39,17 @@ input:focus {
   color: hsl(0, 0%, 98%);
 }
 
-@media (max-width: 750px) {
+@media (max-width: 800px) {
   .form-container {
     flex-direction: column;
-    gap: 2rem;
-    max-width: 70%;
+    gap: 3rem;
+    /* margin-left: 10rem; */
+    /* max-width: 70%; */
+  }
+}
+
+@media (max-width: 560px) {
+  .search-icon {
+    top: 25.2rem;
   }
 }
